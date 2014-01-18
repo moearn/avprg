@@ -88,13 +88,13 @@
     <ClCompile Include="..\source\pluginadapter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Lfo.cpp">
+    <ClCompile Include="..\source\Lfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Ringbuffer.cpp">
+    <ClCompile Include="..\source\Ringbuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="VibratoProcessor.cpp">
+    <ClCompile Include="..\source\VibratoProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -198,11 +198,15 @@
     <ClInclude Include="..\source\pluginadapter.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Lfo.h">
+    <ClInclude Include="..\source\Lfo.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Ringbuffer.h" />
-    <ClInclude Include="VibratoProcessor.h" />
+    <ClInclude Include="..\source\Ringbuffer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\VibratoProcessor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\resource\plugin.rc">

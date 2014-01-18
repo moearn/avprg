@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>Plugin</ProjectName>
+    <ProjectName>Vibrato</ProjectName>
     <ProjectGuid>{DC985626-245E-4F57-846E-DDBA054021FE}</ProjectGuid>
     <RootNamespace>Plugin VST2</RootNamespace>
     <Keyword>Win32Proj</Keyword>
@@ -212,6 +212,7 @@
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\vstgui_uidescription_win32.cpp" />
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\vstgui_win32.cpp" />
     <ClCompile Include="..\source\GainProcessor.cpp" />
+    <ClCompile Include="..\source\Lfo.cpp" />
     <ClCompile Include="..\source\plugin.cpp">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
@@ -231,14 +232,15 @@
     <ClCompile Include="..\..\..\..\source\main\dllmain.cpp" />
     <ClCompile Include="..\..\..\..\source\main\pluginfactoryvst3.cpp" />
     <ClCompile Include="..\..\..\..\..\pluginterfaces\base\ustring.cpp" />
-    <ClCompile Include="Lfo.cpp" />
-    <ClCompile Include="Ringbuffer.cpp" />
-    <ClCompile Include="VibratoProcessor.cpp" />
+    <ClCompile Include="..\source\Ringbuffer.cpp" />
+    <ClCompile Include="..\source\VibratoProcessor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\GainProcessor.h" />
+    <ClInclude Include="..\source\Lfo.h" />
     <ClInclude Include="..\source\plugin.h" />
     <ClInclude Include="..\source\pluginadapter.h" />
+    <ClInclude Include="..\source\Ringbuffer.h" />
     <ClInclude Include="..\source\version.h" />
     <ClInclude Include="..\..\..\..\source\common\pluginview.h" />
     <ClInclude Include="..\..\..\..\source\vst\vstaudioeffect.h" />
@@ -269,9 +271,7 @@
     <ClInclude Include="..\..\..\..\..\pluginterfaces\vst\ivstunits.h" />
     <ClInclude Include="..\..\..\..\..\pluginterfaces\vst\vstpresetkeys.h" />
     <ClInclude Include="..\..\..\..\..\pluginterfaces\vst\vsttypes.h" />
-    <ClInclude Include="Lfo.h" />
-    <ClInclude Include="Ringbuffer.h" />
-    <ClInclude Include="VibratoProcessor.h" />
+    <ClInclude Include="..\source\VibratoProcessor.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\resource\plugin.rc" />
