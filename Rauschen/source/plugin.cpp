@@ -9,9 +9,7 @@ namespace Vst {
 // member function of PluginController!
 // define parameter definitions here...
 void PluginController::setupParameters(){
-	parameters.addParameter(new RangeParameter(STR16("Delay"), kDelayId, STR16("%"), 0, 100));
 	parameters.addParameter(new RangeParameter(STR16("Depth"), kDepthId, STR16("%"), 0, 100));
-	parameters.addParameter(new RangeParameter(STR16("Sweep Depth"), kSweepDepthId, STR16("%"), 0, 100));
 }
 
 
@@ -31,20 +29,10 @@ void Plugin::startProcessing(int numChannels, SampleRate sampleRate){
 }
 tresult PLUGIN_API Plugin::process (ProcessData& data)
 {
-    if (hasInputParameterChanged(data, kDelayId)){
-        float delay = getInputParameterChange(data, kDelayId);
-		leftProcessor.setDelay(delay);
-		rightProcessor.setDelay(delay);
-    }
 	if (hasInputParameterChanged(data, kDepthId)){
         float depth = getInputParameterChange(data, kDepthId);
 		leftProcessor.setDepth(depth);
 		rightProcessor.setDepth(depth);
-    }
-	if (hasInputParameterChanged(data, kSweepDepthId)){
-        float sweepDepth = getInputParameterChange(data, kSweepDepthId);
-		leftProcessor.setSweepDepth(sweepDepth);
-		rightProcessor.setSweepDepth(sweepDepth);
     }
  	if (numChannels > 0){
 		float* leftInputChannel = data.inputs[0].channelBuffers32[0];
