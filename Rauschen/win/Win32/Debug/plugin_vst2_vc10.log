@@ -1,0 +1,64 @@
+﻿Der Buildvorgang wurde am 03.12.2013 15:07:47 gestartet.
+     1>Projekt "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Flanger\win\plugin_vst2_vc10.vcxproj" auf Knoten "3", build Ziel(e).
+     1>InitializeBuildStatus:
+         Aktualisieren des Timestamps von "Win32\Debug\Flanger.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../../.. /I../../../../../vstgui4 /ZI /nologo /W3 /WX- /Od /Oy- /D WINDOWS=1 /D DEVELOPMENT=1 /D _CRT_SECURE_NO_DEPRECATE=1 /D VSTGUI_LIVE_EDITING=1 /D "PLUGINNAME=\"Flanger\"" /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc100.pdb" /FR"Win32\Debug\\" /Gd /TP /analyze- /errorReport:prompt ..\source\FlangerProcessor.cpp ..\source\pluginadapter.cpp
+         pluginadapter.cpp
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.h(8): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.h(9): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.h(10): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+         FlangerProcessor.cpp
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.h(8): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.h(9): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.h(10): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.cpp(16): warning C4244: 'Argument': Konvertierung von 'const float' in 'int', möglicher Datenverlust
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.cpp(37): warning C4244: 'Initialisierung': Konvertierung von 'const float' in 'int', möglicher Datenverlust
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.cpp(40): warning C4244: 'Argument': Konvertierung von 'float' in 'int', möglicher Datenverlust
+         Code wird generiert...
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../../.. /I../../../../../vstgui4 /ZI /nologo /W3 /WX- /Od /Oy- /D WINDOWS=1 /D DEVELOPMENT=1 /D _CRT_SECURE_NO_DEPRECATE=1 /D VSTGUI_LIVE_EDITING=1 /D "PLUGINNAME=\"Flanger\"" /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\plugin1.obj" /Fd"Win32\Debug\vc100.pdb" /FR"Win32\Debug\\" /Gd /TP /analyze- /errorReport:prompt ..\source\plugin.cpp
+         plugin.cpp
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.h(8): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.h(9): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\flangerprocessor.h(10): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+       ResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _VC80_UPGRADE=0x0710 /l"0x0409" /I../../../../.. /nologo /fo"Win32\Debug\plugin.res" ..\resource\plugin.rc 
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _VC80_UPGRADE=0x0710 /l"0x0409" /I../../../../.. /nologo /fo"Win32\Debug\uidesc.res" ..\resource\uidesc.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Flanger\win\Win32\Debug\Flanger.dll) entspricht nicht dem OutputFile-Eigenschaftswert (C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Flanger\win\Flanger.dll) von Linker. Das Projekt wird daher möglicherweise nicht ordnungsgemäß erstellt. Damit dieses Problem behoben werden kann, müssen die Eigenschaftswerte für $(OutDir), $(TargetName) und $(TargetExt) dem in %(Link.OutputFile) angegebenen Wert entsprechen.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Flanger.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"plugin_vst2.def" /MANIFEST:NO /DEBUG /PDB:"Win32\Debug\plugin.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Win32\Debug\Flanger.lib" /MACHINE:X86 /DLL Win32\Debug\plugin.res
+         Win32\Debug\uidesc.res
+         Win32\Debug\vst3editor.obj
+         Win32\Debug\vstgui_uidescription_win32.obj
+         Win32\Debug\vstgui_win32.obj
+         Win32\Debug\FlangerProcessor.obj
+         Win32\Debug\Lfo.obj
+         Win32\Debug\pluginadapter.obj
+         Win32\Debug\pluginview.obj
+         Win32\Debug\vstaudioeffect.obj
+         Win32\Debug\vstbus.obj
+         Win32\Debug\vstcomponent.obj
+         Win32\Debug\vstcomponentbase.obj
+         Win32\Debug\vsteditcontroller.obj
+         Win32\Debug\vstguieditor.obj
+         Win32\Debug\vstinitiids.obj
+         Win32\Debug\vstparameters.obj
+         Win32\Debug\dllmain.obj
+         Win32\Debug\pluginfactoryvst3.obj
+         Win32\Debug\ustring.obj
+         Win32\Debug\Ringbuffer.obj
+         Win32\Debug\plugin1.obj
+         "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\base\win\Win32\Debug.base_vc10\base_vc10.lib"
+         "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\source\vst\vst2wrapper\win\Win32\Debug\vst2wrapper.lib"
+            Bibliothek "Win32\Debug\Flanger.lib" und Objekt "Win32\Debug\Flanger.exp" werden erstellt.
+         plugin_vst2_vc10.vcxproj -> C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Flanger\win\Win32\Debug\Flanger.dll
+       BscMake:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"Win32\Debug\Flanger.bsc" Win32\Debug\vst3editor.sbr Win32\Debug\vstgui_uidescription_win32.sbr Win32\Debug\vstgui_win32.sbr Win32\Debug\FlangerProcessor.sbr Win32\Debug\Lfo.sbr Win32\Debug\plugin.sbr Win32\Debug\pluginadapter.sbr Win32\Debug\pluginview.sbr Win32\Debug\vstaudioeffect.sbr Win32\Debug\vstbus.sbr Win32\Debug\vstcomponent.sbr Win32\Debug\vstcomponentbase.sbr Win32\Debug\vsteditcontroller.sbr Win32\Debug\vstguieditor.sbr Win32\Debug\vstinitiids.sbr Win32\Debug\vstparameters.sbr Win32\Debug\dllmain.sbr Win32\Debug\pluginfactoryvst3.sbr Win32\Debug\ustring.sbr Win32\Debug\Ringbuffer.sbr
+       FinalizeBuildStatus:
+         Die Datei "Win32\Debug\Flanger.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Win32\Debug\Flanger.lastbuildstate".
+     1>Die Erstellung des Projekts "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Flanger\win\plugin_vst2_vc10.vcxproj" ist abgeschlossen, build Ziel(e).
+
+Das Erstellen war erfolgreich.
+
+Verstrichene Zeit 00:00:41.75
