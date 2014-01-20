@@ -3,8 +3,8 @@
 
 class CrackleGenerator {
 public:
-	CrackleGenerator(void);
-	~CrackleGenerator(void);
+	CrackleGenerator();
+	~CrackleGenerator();
 	void initialize(float* samples, int length);
 	void setAmount(float amount);
 	float getValue();

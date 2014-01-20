@@ -9,9 +9,8 @@ namespace Vst {
 // member function of PluginController!
 // define parameter definitions here...
 void PluginController::setupParameters(){
-	parameters.addParameter(new RangeParameter(STR16("Frequenz"), kFreqId, STR16("Hz"), 0.000, 1));
-	parameters.addParameter(new RangeParameter(STR16("SweepDepth"), kSweepDepthId, STR16("%"), 0, 100));
-	parameters.addParameter(new RangeParameter(STR16("Depth (Min Delay)"), kDepthId, STR16("ms"), 0, 10));
+	parameters.addParameter(new RangeParameter(STR16("Crackle Amount"), kCrackleAmountId, STR16("%"), 0, 100));
+	parameters.addParameter(new RangeParameter(STR16("Crackle Depth"), kCrackleDepthId, STR16("%"), 0, 100));
 }
 
 
@@ -31,23 +30,17 @@ void Plugin::startProcessing(int numChannels, SampleRate sampleRate){
 }
 tresult PLUGIN_API Plugin::process (ProcessData& data)
 {
-    if (hasInputParameterChanged(data, kFreqId)){
-        float freq = getInputParameterChange(data, kFreqId);
-		freq = freq == 0 ? 0.0001 : freq; // rescale
-		leftProcessor.setLfoFrequency(freq);
-		rightProcessor.setLfoFrequency(freq);
+    if (hasInputParameterChanged(data, kCrackleAmountId)){
+        float amount = getInputParameterChange(data, kCrackleAmountId);
+		leftProcessor.setCrackleAmount(amount);
+		rightProcessor.setCrackleAmount(amount);
     }
-	if (hasInputParameterChanged(data, kDepthId)){
-        float depth = getInputParameterChange(data, kDepthId);
-		depth = depth / 1000 * 10; // rescale to ms
-		leftProcessor.setFlangerDepth(depth);
-		rightProcessor.setFlangerDepth(depth);
+	if (hasInputParameterChanged(data, kCrackleDepthId)){
+        float depth = getInputParameterChange(data, kCrackleDepthId);
+		leftProcessor.setCrackleDepth(depth);
+		rightProcessor.setCrackleDepth(depth);
     }
-	if (hasInputParameterChanged(data, kSweepDepthId)){
-        float sweepDepth = getInputParameterChange(data, kSweepDepthId);
-		leftProcessor.setLfoDepth(sweepDepth);
-		rightProcessor.setLfoDepth(sweepDepth);
-    }
+
  	if (numChannels > 0){
 		float* leftInputChannel = data.inputs[0].channelBuffers32[0];
 		float* leftOutputChannel = data.outputs[0].channelBuffers32[0];

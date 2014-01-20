@@ -22,6 +22,10 @@ void CrackleProcessor::setCrackleAmount(float amount) {
 	cg.setAmount(amount);
 }
 
+void CrackleProcessor::setCrackleDepth(float depth) {
+	crackleDepth = depth;
+}
+
 
 float CrackleProcessor::processOneSample(float sample) {
 	float crackleValue = cg.getValue() * crackleDepth; // Depth beschreibt im Prinzip Lautstärke

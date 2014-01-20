@@ -1,7 +1,6 @@
 #ifndef CrackleProcessor_H
 #define CrackleProcessor_H
 
-#include "Ringbuffer.h"
 #include "CrackleGenerator.h"
 
 // Diese Klasse später durch Vinyl Processor ersetzen
@@ -10,7 +9,9 @@
 class CrackleProcessor{
 public:
 	CrackleProcessor();
+	~CrackleProcessor();
 	void setCrackleAmount(float amount);
+	void setCrackleDepth(float depth);
 	void initialize(float sampleRate);
 	float processOneSample(float sample);
 	void process(float* input, float* output, int numberOfSamples);

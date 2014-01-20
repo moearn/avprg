@@ -1,7 +1,7 @@
 #include "CrackleGenerator.h"
 #include <stdlib.h>
 #include <time.h>
-using namespace "std";
+using namespace std;
 
 CrackleGenerator::CrackleGenerator() 
 	: amount(0), index(0) {}

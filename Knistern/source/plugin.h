@@ -1,7 +1,7 @@
 #ifndef __plugin__
 #define __plugin__
 #include "pluginadapter.h"
-#include "DelayProcessor.h"
+#include "CrackleProcessor.h"
 
 namespace Steinberg {
 namespace Vst {
@@ -15,9 +15,8 @@ static const FUID PluginControllerUID (0xD39D5B65, 0xE2AF42FA, 0x143F4AC8, 0x41E
 enum
 {
 	/** parameter ID */
-	kFreqId = 0,
-	kDepthId = 0,
-	kSweepDepthId = 0
+	kCrackleAmountId = 0,
+	kCrackleDepthId = 1,
 };
 
 
@@ -33,8 +32,8 @@ private:
 	int numChannels;
 	SampleRate sampleRate;
 private:
-	DelayProcessor leftProcessor;
-	DelayProcessor rightProcessor;
+	CrackleProcessor leftProcessor;
+	CrackleProcessor rightProcessor;
 };
 
 

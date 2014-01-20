@@ -85,12 +85,6 @@
     <ClCompile Include="..\source\pluginadapter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\Lfo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\source\Ringbuffer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\source\CrackleGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -193,12 +187,6 @@
       <Filter>Source Files\pluginterfaces\vst</Filter>
     </ClInclude>
     <ClInclude Include="..\source\pluginadapter.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\Lfo.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\Ringbuffer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\source\CrackleGenerator.h">
