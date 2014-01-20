@@ -1,0 +1,54 @@
+﻿Der Buildvorgang wurde am 01.12.2013 14:44:04 gestartet.
+     1>Projekt "C:\Users\Eric\Documents\Visual Studio 2012\VST3 SDK_WS1314\VST3 SDK_WS1314\public.sdk\avprg\vst\Flanger\win\plugin_vst2_vc10.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>ClCompile:
+         G:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../../../../.. /I../../../../../vstgui4 /ZI /nologo /W3 /WX- /Od /Oy- /D WINDOWS=1 /D DEVELOPMENT=1 /D _CRT_SECURE_NO_DEPRECATE=1 /D VSTGUI_LIVE_EDITING=1 /D "PLUGINNAME=\"Flanger\"" /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /FR"Win32\Debug\\" /Gd /TP /analyze- /errorReport:prompt ..\source\DelayProcessor.cpp ..\source\Lfo.cpp ..\source\pluginadapter.cpp ..\source\Ringbuffer.cpp
+         Ringbuffer.cpp
+         pluginadapter.cpp
+         Lfo.cpp
+     1>c:\users\eric\documents\visual studio 2012\vst3 sdk_ws1314\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\lfo.cpp(22): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'float', möglicher Datenverlust
+     1>c:\users\eric\documents\visual studio 2012\vst3 sdk_ws1314\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\lfo.cpp(23): warning C4244: '=': Konvertierung von 'double' in 'float', möglicher Datenverlust
+         DelayProcessor.cpp
+     1>c:\users\eric\documents\visual studio 2012\vst3 sdk_ws1314\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\delayprocessor.cpp(10): warning C4244: 'Argument': Konvertierung von 'float' in 'int', möglicher Datenverlust
+     1>c:\users\eric\documents\visual studio 2012\vst3 sdk_ws1314\vst3 sdk_ws1314\public.sdk\avprg\vst\flanger\source\delayprocessor.cpp(30): warning C4244: 'Argument': Konvertierung von 'float' in 'int', möglicher Datenverlust
+         Code wird generiert...
+         G:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../../../../.. /I../../../../../vstgui4 /ZI /nologo /W3 /WX- /Od /Oy- /D WINDOWS=1 /D DEVELOPMENT=1 /D _CRT_SECURE_NO_DEPRECATE=1 /D VSTGUI_LIVE_EDITING=1 /D "PLUGINNAME=\"Flanger\"" /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\plugin1.obj" /Fd"Win32\Debug\vc110.pdb" /FR"Win32\Debug\\" /Gd /TP /analyze- /errorReport:prompt ..\source\plugin.cpp
+         plugin.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _VC80_UPGRADE=0x0710 /l"0x0409" /I../../../../.. /nologo /fo"Win32\Debug\plugin.res" ..\resource\plugin.rc 
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _VC80_UPGRADE=0x0710 /l"0x0409" /I../../../../.. /nologo /fo"Win32\Debug\uidesc.res" ..\resource\uidesc.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1137,5): warning MSB8012: TargetPath(C:\Users\Eric\Documents\Visual Studio 2012\VST3 SDK_WS1314\VST3 SDK_WS1314\public.sdk\avprg\vst\Flanger\win\Win32\Debug\Flanger.dll) does not match the Linker's OutputFile property value (C:\Users\Eric\Documents\Visual Studio 2012\VST3 SDK_WS1314\VST3 SDK_WS1314\public.sdk\avprg\vst\Flanger\win\Flanger.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         G:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Flanger.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"plugin_vst2.def" /MANIFEST:NO /DEBUG /PDB:"Win32\Debug\plugin.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Win32\Debug\Flanger.lib" /MACHINE:X86 /SAFESEH /DLL Win32\Debug\plugin.res
+         Win32\Debug\uidesc.res
+         Win32\Debug\vst3editor.obj
+         Win32\Debug\vstgui_uidescription_win32.obj
+         Win32\Debug\vstgui_win32.obj
+         Win32\Debug\DelayProcessor.obj
+         Win32\Debug\Lfo.obj
+         Win32\Debug\pluginadapter.obj
+         Win32\Debug\pluginview.obj
+         Win32\Debug\vstaudioeffect.obj
+         Win32\Debug\vstbus.obj
+         Win32\Debug\vstcomponent.obj
+         Win32\Debug\vstcomponentbase.obj
+         Win32\Debug\vsteditcontroller.obj
+         Win32\Debug\vstguieditor.obj
+         Win32\Debug\vstinitiids.obj
+         Win32\Debug\vstparameters.obj
+         Win32\Debug\dllmain.obj
+         Win32\Debug\pluginfactoryvst3.obj
+         Win32\Debug\ustring.obj
+         Win32\Debug\Ringbuffer.obj
+         Win32\Debug\plugin1.obj
+         "C:\Users\Eric\Documents\Visual Studio 2012\VST3 SDK_WS1314\VST3 SDK_WS1314\base\win\Win32\Debug.base_vc10\base_vc10.lib"
+         "C:\Users\Eric\Documents\Visual Studio 2012\VST3 SDK_WS1314\VST3 SDK_WS1314\public.sdk\source\vst\vst2wrapper\win\Win32\Debug\vst2wrapper.lib"
+     1>vst3editor.obj : warning LNK4075: /EDITANDCONTINUE wird aufgrund der Angabe von /SAFESEH ignoriert.
+            Bibliothek "Win32\Debug\Flanger.lib" und Objekt "Win32\Debug\Flanger.exp" werden erstellt.
+         plugin_vst2_vc10.vcxproj -> C:\Users\Eric\Documents\Visual Studio 2012\VST3 SDK_WS1314\VST3 SDK_WS1314\public.sdk\avprg\vst\Flanger\win\Win32\Debug\Flanger.dll
+       BscMake:
+         G:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\bscmake.exe /nologo /o"Win32\Debug\Flanger.bsc" Win32\Debug\vst3editor.sbr Win32\Debug\vstgui_uidescription_win32.sbr Win32\Debug\vstgui_win32.sbr Win32\Debug\DelayProcessor.sbr Win32\Debug\Lfo.sbr Win32\Debug\plugin.sbr Win32\Debug\pluginadapter.sbr Win32\Debug\pluginview.sbr Win32\Debug\vstaudioeffect.sbr Win32\Debug\vstbus.sbr Win32\Debug\vstcomponent.sbr Win32\Debug\vstcomponentbase.sbr Win32\Debug\vsteditcontroller.sbr Win32\Debug\vstguieditor.sbr Win32\Debug\vstinitiids.sbr Win32\Debug\vstparameters.sbr Win32\Debug\dllmain.sbr Win32\Debug\pluginfactoryvst3.sbr Win32\Debug\ustring.sbr Win32\Debug\Ringbuffer.sbr
+     1>Die Erstellung des Projekts "C:\Users\Eric\Documents\Visual Studio 2012\VST3 SDK_WS1314\VST3 SDK_WS1314\public.sdk\avprg\vst\Flanger\win\plugin_vst2_vc10.vcxproj" ist abgeschlossen, Build Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:11.40
