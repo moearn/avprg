@@ -19,7 +19,6 @@ public:
 		void setSweep(float sweep);
 private:
         float sampleRate;
-        Lfo lfo;
         Ringbuffer buffer;
         float depth;
 		float sweep;

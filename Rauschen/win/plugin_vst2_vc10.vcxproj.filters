@@ -88,10 +88,7 @@
     <ClCompile Include="..\source\Ringbuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\FlangerProcessor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\source\Lfo.cpp">
+    <ClCompile Include="..\source\RauschProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -195,10 +192,7 @@
     <ClInclude Include="..\source\Ringbuffer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\FlangerProcessor.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\Lfo.h">
+    <ClInclude Include="..\source\RauschProcessor.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

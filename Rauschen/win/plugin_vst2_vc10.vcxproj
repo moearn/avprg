@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>Flanger</ProjectName>
+    <ProjectName>Rauschen</ProjectName>
     <ProjectGuid>{DC985626-245E-4F57-846E-DDBA054021FE}</ProjectGuid>
     <RootNamespace>Plugin VST2</RootNamespace>
     <Keyword>Win32Proj</Keyword>
@@ -211,8 +211,6 @@
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\plugin-bindings\vst3editor.cpp" />
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\vstgui_uidescription_win32.cpp" />
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\vstgui_win32.cpp" />
-    <ClCompile Include="..\source\FlangerProcessor.cpp" />
-    <ClCompile Include="..\source\Lfo.cpp" />
     <ClCompile Include="..\source\plugin.cpp">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
@@ -232,13 +230,13 @@
     <ClCompile Include="..\..\..\..\source\main\dllmain.cpp" />
     <ClCompile Include="..\..\..\..\source\main\pluginfactoryvst3.cpp" />
     <ClCompile Include="..\..\..\..\..\pluginterfaces\base\ustring.cpp" />
+    <ClCompile Include="..\source\RauschProcessor.cpp" />
     <ClCompile Include="..\source\Ringbuffer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\source\FlangerProcessor.h" />
-    <ClInclude Include="..\source\Lfo.h" />
     <ClInclude Include="..\source\plugin.h" />
     <ClInclude Include="..\source\pluginadapter.h" />
+    <ClInclude Include="..\source\RauschProcessor.h" />
     <ClInclude Include="..\source\Ringbuffer.h" />
     <ClInclude Include="..\source\version.h" />
     <ClInclude Include="..\..\..\..\source\common\pluginview.h" />

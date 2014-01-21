@@ -1,4 +1,7 @@
 #include "RauschProcessor.h"
+#include <ctime>
+#include <iostream>
+#include <cstdlib>
 
 RauschProcessor::RauschProcessor()
 : depth(0)
@@ -11,8 +14,7 @@ RauschProcessor::RauschProcessor()
 
 void RauschProcessor::initialize(float sampleRate){
         this->sampleRate = sampleRate;
-        lfo.initialize(sampleRate);
-        buffer.resize(DELAY_MAX_SEC * sampleRate);
+        buffer.resize(sampleRate);
 }
 
 void RauschProcessor::setSweep(float sweep){
@@ -24,12 +26,17 @@ void RauschProcessor::setDepth(float depth){
 }
 
 float RauschProcessor::processOneSample(float input){
+		srand((unsigned)time(0));
 		//generiert eine zufällige Frequenz zwischen 20 und 20.000 Hz
-		float randomFreq = rand() % 19981 + 20;
-		float oldFreq = buffer.readWithDelay(1);
-		sweep *= (randomFreq / oldFreq);
-		float output = (depth*randomFreq + input)*sweep;
+		float randomFreq = rand() % 20000 + 20;
+		//aktuelle Frequenz wird in Buffer geschrieben
         buffer.write(randomFreq);
+		//liest die ein Sample zuvor generierte Frequenz
+		float oldFreq = buffer.readWithDelay(1);
+		//generiert die neue Amplitude aus dem Quotient der beiden Frequenzen
+		sweep *= (randomFreq / oldFreq);
+		//output = stärke der Frequenz plus eingespieltes sample, sweep ist hier die amplitude
+		float output = input + ((depth/2)*randomFreq)*sweep;
 
         return output;
 }
