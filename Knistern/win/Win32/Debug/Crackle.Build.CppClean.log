@@ -1,3 +1,4 @@
+C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\WIN32\DEBUG\CRACKLE.BSC
 C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\WIN32\DEBUG\USTRING.SBR
 C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\WIN32\DEBUG\PLUGINFACTORYVST3.SBR
 C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\WIN32\DEBUG\DLLMAIN.SBR
@@ -37,6 +38,11 @@ C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT
 C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\WIN32\DEBUG\VC110.PDB
 C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\WIN32\DEBUG\PLUGIN.SBR
 C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\WIN32\DEBUG\PLUGIN1.OBJ
+C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\Crackle.lib
+C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\Crackle.exp
+C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\CRACKLE.ILK
+C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\CRACKLE.DLL
+C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\WIN32\DEBUG\PLUGIN.PDB
 C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\WIN32\DEBUG\PLUGIN.RES
 C:\USERS\ERIC\SKYDRIVE\PROGRAMMIERUNG\VST3 SDK_WS1314\PUBLIC.SDK\AVPRG\AVPRG_GIT\KNISTERN\WIN\WIN32\DEBUG\UIDESC.RES
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\CrackleGenerator.obj
@@ -58,9 +64,13 @@ C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\vstgui_win32.obj
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\vstinitiids.obj
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\vstparameters.obj
+C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\BscMake.command.1.tlog
+C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\bscmake.read.1.tlog
+C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\bscmake.write.1.tlog
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\cl.command.1.tlog
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\CL.read.1.tlog
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\CL.write.1.tlog
+C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\Crackle.write.1.tlog
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\link-cvtres.read.1.tlog
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\link-cvtres.write.1.tlog
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\link.command.1.tlog
@@ -71,10 +81,10 @@ C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\rc.write.1.tlog
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\plugin.res
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\uidesc.res
-C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\Crackle.exp
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\vc110.idb
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\plugin.pdb
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\vc110.pdb
+C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\Crackle.bsc
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\CrackleGenerator.sbr
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\CrackleProcessor.sbr
 C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\dllmain.sbr

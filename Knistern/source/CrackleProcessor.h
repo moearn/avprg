@@ -9,7 +9,6 @@
 class CrackleProcessor{
 public:
 	CrackleProcessor();
-	~CrackleProcessor();
 	void setCrackleAmount(float amount);
 	void setCrackleDepth(float depth);
 	void initialize(float sampleRate);
@@ -18,7 +17,8 @@ public:
 private:
 	float sampleRate;
 	float crackleDepth;
-	CrackleGenerator cg;
+	CrackleGenerator crackle;
+	CrackleGenerator pop;
 };
 
 #endif

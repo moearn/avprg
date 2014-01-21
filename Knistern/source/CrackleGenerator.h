@@ -4,12 +4,12 @@
 class CrackleGenerator {
 public:
 	CrackleGenerator();
-	~CrackleGenerator();
-	void initialize(float* samples, int length);
+	void initialize(float* samples, int length, int gapLength);
 	void setAmount(float amount);
 	float getValue();
 private:
 	int index;
+	int gapLength;
 	float* crackleSamples;
 	int crackleLength;
 	float crackleVolume;

@@ -37,6 +37,7 @@ tresult PLUGIN_API Plugin::process (ProcessData& data)
     }
 	if (hasInputParameterChanged(data, kCrackleDepthId)){
         float depth = getInputParameterChange(data, kCrackleDepthId);
+		depth = depth/2;
 		leftProcessor.setCrackleDepth(depth);
 		rightProcessor.setCrackleDepth(depth);
     }
