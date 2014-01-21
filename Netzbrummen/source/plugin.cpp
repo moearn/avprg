@@ -9,7 +9,7 @@ namespace Vst {
 // member function of PluginController!
 // define parameter definitions here...
 void PluginController::setupParameters(){
-	parameters.addParameter(new RangeParameter(STR16("Volume"), kDepthId, STR16("%"), 0, 100));
+	parameters.addParameter(new RangeParameter(STR16("Volume"), kVolumeId, STR16("%"), 0, 100));
 }
 
 
