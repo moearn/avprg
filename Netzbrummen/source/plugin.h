@@ -1,7 +1,7 @@
 #ifndef __plugin__
 #define __plugin__
 #include "pluginadapter.h"
-#include "GainProcessor.h"
+#include "HumProcessor.h"
 
 namespace Steinberg {
 namespace Vst {
@@ -33,8 +33,8 @@ private:
 	int numChannels;
 	SampleRate sampleRate;
 private:
-	GainProcessor leftProcessor;
-	GainProcessor rightProcessor;
+	HumProcessor leftProcessor;
+	HumProcessor rightProcessor;
 };
 
 

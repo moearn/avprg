@@ -82,13 +82,13 @@
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\plugin-bindings\vst3editor.cpp">
       <Filter>Source Files\vstgui4</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\GainProcessor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\source\pluginadapter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\source\Lfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HumProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -186,13 +186,13 @@
     <ClInclude Include="..\..\..\..\..\pluginterfaces\vst\vsttypes.h">
       <Filter>Source Files\pluginterfaces\vst</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\GainProcessor.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\source\pluginadapter.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\source\Lfo.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\HumProcessor.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

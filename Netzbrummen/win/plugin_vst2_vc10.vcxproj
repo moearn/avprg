@@ -215,7 +215,7 @@
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\plugin-bindings\vst3editor.cpp" />
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\vstgui_uidescription_win32.cpp" />
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\vstgui_win32.cpp" />
-    <ClCompile Include="..\source\GainProcessor.cpp" />
+    <ClCompile Include="..\source\HumProcessor.cpp" />
     <ClCompile Include="..\source\Lfo.cpp" />
     <ClCompile Include="..\source\plugin.cpp">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
@@ -238,7 +238,7 @@
     <ClCompile Include="..\..\..\..\..\pluginterfaces\base\ustring.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\source\GainProcessor.h" />
+    <ClInclude Include="..\source\HumProcessor.h" />
     <ClInclude Include="..\source\Lfo.h" />
     <ClInclude Include="..\source\plugin.h" />
     <ClInclude Include="..\source\pluginadapter.h" />
