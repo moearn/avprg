@@ -23,18 +23,20 @@ void HumProcessor::setVolume(float vol){
 
 float HumProcessor::processOneSample(float input){
 
-	float hum = lfo50Hz.getValue() * 0.50 + 
+	float hum = lfo50Hz.getValue() * 0.40 + 
 				lfo45Hz.getValue() * 0.05 + 
 				lfo55Hz.getValue() * 0.05 +
-				lfo100Hz.getValue() * 0.10 + 
-				lfo150Hz.getValue() * 0.25 + 
+				lfo100Hz.getValue() * 0.15 + 
+				lfo150Hz.getValue() * 0.20 + 
 				lfo5000Hz.getValue() * 0.003 +
 				lfo5050Hz.getValue() * 0.002 +
-				lfo7050Hz.getValue() * 0.005 +
-				lfo7100Hz.getValue() * 0.005 +
-				lfo7150Hz.getValue() * 0.005;
+				lfo7050Hz.getValue() * 0.003 +
+				lfo7100Hz.getValue() * 0.003 +
+				lfo7150Hz.getValue() * 0.003;
 
 	float processed = input + hum * volume;
+
+	processed = processed > 1.0 ? 1.0 : (processed < -1.0 ? -1.0 : processed); // prevent clipping
 
 	return processed;
 }
