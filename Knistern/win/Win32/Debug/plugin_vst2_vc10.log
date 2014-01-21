@@ -1,0 +1,35 @@
+﻿Der Buildvorgang wurde am 21.01.2014 18:52:52 gestartet.
+     1>Projekt "C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\plugin_vst2_vc10.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1137,5): warning MSB8012: TargetPath(C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\Knistern.dll) does not match the Linker's OutputFile property value (C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Knistern.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>Link:
+         G:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Knistern.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"plugin_vst2.def" /MANIFEST:NO /DEBUG /PDB:"Win32\Debug\plugin.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Win32\Debug\Knistern.lib" /MACHINE:X86 /SAFESEH /DLL Win32\Debug\plugin.res
+         Win32\Debug\uidesc.res
+         Win32\Debug\vst3editor.obj
+         Win32\Debug\vstgui_uidescription_win32.obj
+         Win32\Debug\vstgui_win32.obj
+         Win32\Debug\CrackleGenerator.obj
+         Win32\Debug\CrackleProcessor.obj
+         Win32\Debug\pluginadapter.obj
+         Win32\Debug\pluginview.obj
+         Win32\Debug\vstaudioeffect.obj
+         Win32\Debug\vstbus.obj
+         Win32\Debug\vstcomponent.obj
+         Win32\Debug\vstcomponentbase.obj
+         Win32\Debug\vsteditcontroller.obj
+         Win32\Debug\vstguieditor.obj
+         Win32\Debug\vstinitiids.obj
+         Win32\Debug\vstparameters.obj
+         Win32\Debug\dllmain.obj
+         Win32\Debug\pluginfactoryvst3.obj
+         Win32\Debug\ustring.obj
+         Win32\Debug\plugin1.obj
+         "C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\base\win\Win32\Debug.base_vc10\base_vc10.lib"
+         "C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\source\vst\vst2wrapper\win\Win32\Debug\vst2wrapper.lib"
+         plugin_vst2_vc10.vcxproj -> C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\Win32\Debug\Knistern.dll
+       BscMake:
+         G:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\bscmake.exe /nologo /o"Win32\Debug\Knistern.bsc" Win32\Debug\vst3editor.sbr Win32\Debug\vstgui_uidescription_win32.sbr Win32\Debug\vstgui_win32.sbr Win32\Debug\CrackleGenerator.sbr Win32\Debug\CrackleProcessor.sbr Win32\Debug\plugin.sbr Win32\Debug\pluginadapter.sbr Win32\Debug\pluginview.sbr Win32\Debug\vstaudioeffect.sbr Win32\Debug\vstbus.sbr Win32\Debug\vstcomponent.sbr Win32\Debug\vstcomponentbase.sbr Win32\Debug\vsteditcontroller.sbr Win32\Debug\vstguieditor.sbr Win32\Debug\vstinitiids.sbr Win32\Debug\vstparameters.sbr Win32\Debug\dllmain.sbr Win32\Debug\pluginfactoryvst3.sbr Win32\Debug\ustring.sbr
+     1>Die Erstellung des Projekts "C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Knistern\win\plugin_vst2_vc10.vcxproj" ist abgeschlossen, Build Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:00.62
