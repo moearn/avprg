@@ -8,15 +8,16 @@ public:
 	void initialize(float sampleRate);
 	float processOneSample(float);
 	void process(float* input, float*output, int numberOfSamples);
-	void setHum(float hum);
-	void setFrequency(float frequency);
-	void setTremoloOffset(float offset);
-	void setTremoloDepth(float depth);
+	void setVolume(float volume);
 private:
 	float sampleRate;
-	float hum;
-	float trem_offset;
-	float trem_depth;
-	Lfo lfo;
+	float volume;
+	Lfo lfo50Hz;
+	Lfo lfo100Hz;
+	Lfo lfo150Hz;
+	Lfo lfo500Hz;
+	Lfo lfo1000Hz;
+	Lfo lfo2000Hz;
+	Lfo lfo5000Hz;
 };
 #endif

@@ -9,9 +9,7 @@ namespace Vst {
 // member function of PluginController!
 // define parameter definitions here...
 void PluginController::setupParameters(){
-	parameters.addParameter(new RangeParameter(STR16("Frequenz"), kFreqId, STR16("Hz"), 0.1, 10));
-	parameters.addParameter(new RangeParameter(STR16("Offset"), kOffsetId, STR16("%"), 0, 100));
-	parameters.addParameter(new RangeParameter(STR16("Depth"), kDepthId, STR16("%"), 0, 100));
+	parameters.addParameter(new RangeParameter(STR16("Volume"), kDepthId, STR16("%"), 0, 100));
 }
 
 
@@ -31,21 +29,10 @@ void Plugin::startProcessing(int numChannels, SampleRate sampleRate){
 }
 tresult PLUGIN_API Plugin::process (ProcessData& data)
 {
-    if (hasInputParameterChanged(data, kFreqId)){
-        float freq = getInputParameterChange(data, kFreqId);
-		freq = freq * 20; // rescale
-		leftProcessor.setFrequency(freq);
-		rightProcessor.setFrequency(freq);
-    }
-	if (hasInputParameterChanged(data, kOffsetId)){
-        float offset = getInputParameterChange(data, kOffsetId);
-		leftProcessor.setTremoloOffset(offset);
-		rightProcessor.setTremoloOffset(offset);
-    }
-	if (hasInputParameterChanged(data, kDepthId)){
-        float depth = getInputParameterChange(data, kDepthId);
-		leftProcessor.setTremoloDepth(depth);
-		rightProcessor.setTremoloDepth(depth);
+	if (hasInputParameterChanged(data, kVolumeId)){
+        float vol = getInputParameterChange(data, kVolumeId);
+		leftProcessor.setVolume(vol);
+		rightProcessor.setVolume(vol);
     }
  	if (numChannels > 0){
 		float* leftInputChannel = data.inputs[0].channelBuffers32[0];

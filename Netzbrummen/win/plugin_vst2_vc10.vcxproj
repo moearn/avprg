@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>LfoPlugin</ProjectName>
+    <ProjectName>Netzbrummen</ProjectName>
     <ProjectGuid>{DC985626-245E-4F57-846E-DDBA054021FE}</ProjectGuid>
     <RootNamespace>Plugin VST2</RootNamespace>
     <Keyword>Win32Proj</Keyword>
