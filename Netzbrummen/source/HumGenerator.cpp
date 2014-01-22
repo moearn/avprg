@@ -1,6 +1,6 @@
 #include "HumGenerator.h"
 
-HumGenerator::HumGenerator() : baseAmount(0.40), midAmount(0.20), highAmount(0.20)
+HumGenerator::HumGenerator() : baseAmount(0.50), midAmount(0.20), highAmount(0.10)
 {}
 
 void HumGenerator::initialize(float sampleRate) {
@@ -8,13 +8,13 @@ void HumGenerator::initialize(float sampleRate) {
 	baseFreqLfos[1].initialize(sampleRate, 150); 
 	baseFreqLfos[2].initialize(sampleRate, 250);
 
-	midFreqLfos[0].initialize(sampleRate, 500);
-	midFreqLfos[1].initialize(sampleRate, 550);
-	midFreqLfos[2].initialize(sampleRate, 600);
+	midFreqLfos[0].initialize(sampleRate, 1800);
+	midFreqLfos[1].initialize(sampleRate, 1850);
+	midFreqLfos[2].initialize(sampleRate, 1900);
 
-	highFreqLfos[0].initialize(sampleRate, 5000);
-	highFreqLfos[1].initialize(sampleRate, 5050);
-	highFreqLfos[2].initialize(sampleRate, 5100);
+	highFreqLfos[0].initialize(sampleRate, 5200);
+	highFreqLfos[1].initialize(sampleRate, 5250);
+	highFreqLfos[2].initialize(sampleRate, 5300);
 	highFreqLfos[3].initialize(sampleRate, 6100);
 	highFreqLfos[4].initialize(sampleRate, 6200);
 	highFreqLfos[5].initialize(sampleRate, 6300);
@@ -22,11 +22,11 @@ void HumGenerator::initialize(float sampleRate) {
 
 
 void HumGenerator::setBaseAmount(float amount) {
-	this->baseAmount = amount;
+	this->baseAmount = amount * 0.50;
 }
 
 void HumGenerator::setHighAmount(float amount) {
-	this->highAmount = amount;
+	this->highAmount = amount * 0.25;
 }
 
 void HumGenerator::setHighFrequency(float freq) {
@@ -45,7 +45,7 @@ void HumGenerator::setHighClarity(float clarity) {
 }
 
 void HumGenerator::setMidAmount(float amount) {
-	this->midAmount = amount;
+	this->midAmount = amount * 0.25;
 }
 
 void HumGenerator::setMidFrequency(float freq) {
@@ -60,30 +60,30 @@ void HumGenerator::setMidClarity(float clarity) {
 }
 
 
-float HumGenerator::getValue() {
+float HumGenerator::getBaseFreqValue(){
 	return  baseFreqLfos[0].getValue() * 0.80 + 
 			baseFreqLfos[1].getValue() * 0.10 + 
 			baseFreqLfos[2].getValue() * 0.10;
 }
 
 
-float HumGenerator::getBaseFreqValue() {
+float HumGenerator::getMidFreqValue() {
 	return	midFreqLfos[0].getValue() * 0.30 + 
 			midFreqLfos[0].getValue() * 0.40 + 
 			midFreqLfos[0].getValue() * 0.30;
 }
 
 
-float HumGenerator::getMidFreqValue() {
-	return	highFreqLfos[0].getValue() * 0.15 +
-			highFreqLfos[1].getValue() * 0.20 +
-			highFreqLfos[2].getValue() * 0.15 +
-			highFreqLfos[3].getValue() * 0.15 +
-			highFreqLfos[4].getValue() * 0.20 +
-			highFreqLfos[5].getValue() * 0.15;
+float HumGenerator::getHighFreqValue()  {
+	return	highFreqLfos[0].getValue() * 0.25 +
+			highFreqLfos[1].getValue() * 0.30 +
+			highFreqLfos[2].getValue() * 0.25 +
+			highFreqLfos[3].getValue() * 0.10 +
+			highFreqLfos[4].getValue() * 0.10 +
+			highFreqLfos[5].getValue() * 0.10;
 }
 
-float HumGenerator::getHighFreqValue() {
+float HumGenerator::getValue() {
 	float hum = getBaseFreqValue() * baseAmount +
 				getMidFreqValue()  * midAmount +
 				getHighFreqValue() * highAmount;

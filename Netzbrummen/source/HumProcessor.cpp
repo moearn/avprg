@@ -22,6 +22,22 @@ void HumProcessor::setVolume(float vol){
 	this->volume = vol;
 }
 
+void HumProcessor::setMidFrequency(float freq){
+	mainsHum.setMidFrequency(freq);
+}
+
+void HumProcessor::setHighFrequency(float freq){
+	mainsHum.setHighFrequency(freq);
+}
+
+void HumProcessor::setMidDepth(float depth) {
+	mainsHum.setMidAmount(depth);
+}
+
+void HumProcessor::setHighDepth(float depth) {
+	mainsHum.setHighAmount(depth);
+}
+
 float HumProcessor::processOneSample(float input){
 
 	//float hum = lfo50Hz.getValue() * 0.40 + 

@@ -15,7 +15,11 @@ static const FUID PluginControllerUID (0xD39D5B65, 0xE8AF42FA, 0x143F4AC8, 0x41E
 enum
 {
 	/** parameter ID */
-	kVolumeId = 0
+	kVolumeId = 0,
+	kMidFreqId = 1,
+	kHighFreqId = 2,
+	kMidDepthId = 3,
+	kHighDepthId = 4
 };
 
 
