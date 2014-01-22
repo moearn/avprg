@@ -215,6 +215,7 @@
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\plugin-bindings\vst3editor.cpp" />
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\vstgui_uidescription_win32.cpp" />
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\vstgui_win32.cpp" />
+    <ClCompile Include="..\source\HumGenerator.cpp" />
     <ClCompile Include="..\source\HumProcessor.cpp" />
     <ClCompile Include="..\source\Lfo.cpp" />
     <ClCompile Include="..\source\plugin.cpp">
@@ -238,6 +239,7 @@
     <ClCompile Include="..\..\..\..\..\pluginterfaces\base\ustring.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\source\HumGenerator.h" />
     <ClInclude Include="..\source\HumProcessor.h" />
     <ClInclude Include="..\source\Lfo.h" />
     <ClInclude Include="..\source\plugin.h" />

@@ -15,6 +15,10 @@ void Lfo::initialize(float sampleRate, float freq) {
 	this->frequency = freq;
 }
 
+void Lfo::setFrequency(float freq) {
+	this->frequency = freq;
+}
+
 float Lfo::getValue() {
 	float value = sin (2 * PI * index * frequency / sampleRate);
 	value = (value + 1) * 0.5; // transform from (-1/1) to (0/1)

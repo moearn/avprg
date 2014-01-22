@@ -1,6 +1,7 @@
 #ifndef HUM_PROCESSOR_H
 #define HUM_PROCESSOR_H
 #include "Lfo.h"
+#include "HumGenerator.h"
 
 class HumProcessor{
 public:
@@ -12,6 +13,7 @@ public:
 private:
 	float sampleRate;
 	float volume;
+	HumGenerator mainsHum;
 	Lfo lfo45Hz;
 	Lfo lfo50Hz;
 	Lfo lfo55Hz;

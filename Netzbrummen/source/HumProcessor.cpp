@@ -6,16 +6,17 @@ HumProcessor::HumProcessor()
 
 void HumProcessor::initialize(float sampleRate){
 	this->sampleRate = sampleRate;
-	lfo45Hz.initialize(sampleRate, 45);
-	lfo50Hz.initialize(sampleRate, 50);
-	lfo55Hz.initialize(sampleRate, 55);
-	lfo100Hz.initialize(sampleRate, 100);
-	lfo150Hz.initialize(sampleRate, 150);
-	lfo5000Hz.initialize(sampleRate, 5000);
-	lfo5050Hz.initialize(sampleRate, 5050);
-	lfo7050Hz.initialize(sampleRate, 7050);
-	lfo7100Hz.initialize(sampleRate, 7100);
-	lfo7150Hz.initialize(sampleRate, 7150);
+	//lfo45Hz.initialize(sampleRate, 45);
+	//lfo50Hz.initialize(sampleRate, 50);
+	//lfo55Hz.initialize(sampleRate, 55);
+	//lfo100Hz.initialize(sampleRate, 100);
+	//lfo150Hz.initialize(sampleRate, 150);
+	//lfo5000Hz.initialize(sampleRate, 5000);
+	//lfo5050Hz.initialize(sampleRate, 5050);
+	//lfo7050Hz.initialize(sampleRate, 7050);
+	//lfo7100Hz.initialize(sampleRate, 7100);
+	//lfo7150Hz.initialize(sampleRate, 7150);
+	mainsHum.initialize(sampleRate);
 }
 void HumProcessor::setVolume(float vol){
 	this->volume = vol;
@@ -23,16 +24,18 @@ void HumProcessor::setVolume(float vol){
 
 float HumProcessor::processOneSample(float input){
 
-	float hum = lfo50Hz.getValue() * 0.40 + 
-				lfo45Hz.getValue() * 0.05 + 
-				lfo55Hz.getValue() * 0.05 +
-				lfo100Hz.getValue() * 0.15 + 
-				lfo150Hz.getValue() * 0.20 + 
-				lfo5000Hz.getValue() * 0.003 +
-				lfo5050Hz.getValue() * 0.002 +
-				lfo7050Hz.getValue() * 0.003 +
-				lfo7100Hz.getValue() * 0.003 +
-				lfo7150Hz.getValue() * 0.003;
+	//float hum = lfo50Hz.getValue() * 0.40 + 
+	//			lfo45Hz.getValue() * 0.05 + 
+	//			lfo55Hz.getValue() * 0.05 +
+	//			lfo100Hz.getValue() * 0.15 + 
+	//			lfo150Hz.getValue() * 0.20 + 
+	//			lfo5000Hz.getValue() * 0.003 +
+	//			lfo5050Hz.getValue() * 0.002 +
+	//			lfo7050Hz.getValue() * 0.003 +
+	//			lfo7100Hz.getValue() * 0.003 +
+	//			lfo7150Hz.getValue() * 0.003;
+
+	float hum = mainsHum.getValue();
 
 	float processed = input + hum * volume;
 
