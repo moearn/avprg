@@ -41,11 +41,11 @@ float RauschProcessor::processOneSample(float input){
 		float random = static_cast <float>(rand()) / static_cast <float>(RAND_MAX);
 		
 		for(int i = 0; i<5; i++){
-			if(random <= arraySum[i]){
+			//if(random <= arraySum[i]){
 				srand(time(NULL));
 				float random2 = static_cast <float>(rand()) / static_cast <float>(RAND_MAX);
 				output += 2* (random2 - 0.5) * arrayA[i];
-			}
+			//}
 		}
 		
 		return input + (output * depth);
