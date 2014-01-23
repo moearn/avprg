@@ -16,7 +16,6 @@ public:
         float processOneSample(float input);
         void process(float* input, float*output, int numberOfSamples);
         void setDepth(float depth);
-		void setSweep(float sweep);
 private:
         float sampleRate;
         Ringbuffer buffer;
