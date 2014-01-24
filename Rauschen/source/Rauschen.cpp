@@ -28,7 +28,6 @@ float Rauschen::generateOutput(){
 		
 		
 		float random = static_cast <float>(rand()) / static_cast <float>(RAND_MAX);
-		//float random2 = static_cast <float>(rand()) / static_cast <float>(RAND_MAX);
 		for(int i = 0; i<5; i++){
 			if(random <= arraySum[i]){
 				float random3 = static_cast <float>(rand()) / static_cast <float>(RAND_MAX);
@@ -36,7 +35,7 @@ float Rauschen::generateOutput(){
 			}
 		}
 
-		output *= 0.053;
+		output *= 0.06;
 		
 		return output;
 }
