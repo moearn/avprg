@@ -1,4 +1,4 @@
-﻿Der Buildvorgang wurde am 23.01.2014 21:53:28 gestartet.
+﻿Der Buildvorgang wurde am 24.01.2014 17:50:21 gestartet.
      1>Projekt "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Rauschen\win\plugin_vst2_vc10.vcxproj" auf Knoten "3", build Ziel(e).
      1>InitializeBuildStatus:
          Aktualisieren des Timestamps von "Win32\Debug\Rauschen.unsuccessfulbuild".
@@ -28,16 +28,14 @@
          Win32\Debug\dllmain.obj
          Win32\Debug\pluginfactoryvst3.obj
          Win32\Debug\ustring.obj
+         Win32\Debug\Rauschen.obj
          Win32\Debug\RauschProcessor.obj
-         Win32\Debug\Ringbuffer.obj
          Win32\Debug\plugin1.obj
          "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\base\win\Win32\Debug.base_vc10\base_vc10.lib"
          "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\source\vst\vst2wrapper\win\Win32\Debug\vst2wrapper.lib"
-         LINK : Programmdatenbank "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Rauschen\win\Win32\Debug\plugin.pdb" fehlt; vollständiger Link wird durchgeführt.
-            Bibliothek "Win32\Debug\Rauschen.lib" und Objekt "Win32\Debug\Rauschen.exp" werden erstellt.
          plugin_vst2_vc10.vcxproj -> C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Rauschen\win\Win32\Debug\Rauschen.dll
        BscMake:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"Win32\Debug\Rauschen.bsc" Win32\Debug\vst3editor.sbr Win32\Debug\vstgui_uidescription_win32.sbr Win32\Debug\vstgui_win32.sbr Win32\Debug\plugin.sbr Win32\Debug\pluginadapter.sbr Win32\Debug\pluginview.sbr Win32\Debug\vstaudioeffect.sbr Win32\Debug\vstbus.sbr Win32\Debug\vstcomponent.sbr Win32\Debug\vstcomponentbase.sbr Win32\Debug\vsteditcontroller.sbr Win32\Debug\vstguieditor.sbr Win32\Debug\vstinitiids.sbr Win32\Debug\vstparameters.sbr Win32\Debug\dllmain.sbr Win32\Debug\pluginfactoryvst3.sbr Win32\Debug\ustring.sbr Win32\Debug\RauschProcessor.sbr Win32\Debug\Ringbuffer.sbr
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"Win32\Debug\Rauschen.bsc" Win32\Debug\vst3editor.sbr Win32\Debug\vstgui_uidescription_win32.sbr Win32\Debug\vstgui_win32.sbr Win32\Debug\plugin.sbr Win32\Debug\pluginadapter.sbr Win32\Debug\pluginview.sbr Win32\Debug\vstaudioeffect.sbr Win32\Debug\vstbus.sbr Win32\Debug\vstcomponent.sbr Win32\Debug\vstcomponentbase.sbr Win32\Debug\vsteditcontroller.sbr Win32\Debug\vstguieditor.sbr Win32\Debug\vstinitiids.sbr Win32\Debug\vstparameters.sbr Win32\Debug\dllmain.sbr Win32\Debug\pluginfactoryvst3.sbr Win32\Debug\ustring.sbr Win32\Debug\Rauschen.sbr Win32\Debug\RauschProcessor.sbr
        FinalizeBuildStatus:
          Die Datei "Win32\Debug\Rauschen.unsuccessfulbuild" wird gelöscht.
          Aktualisieren des Timestamps von "Win32\Debug\Rauschen.lastbuildstate".
@@ -45,4 +43,4 @@
 
 Das Erstellen war erfolgreich.
 
-Verstrichene Zeit 00:00:20.62
+Verstrichene Zeit 00:00:03.85
