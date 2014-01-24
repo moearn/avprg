@@ -85,10 +85,10 @@
     <ClCompile Include="..\source\pluginadapter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\Ringbuffer.cpp">
+    <ClCompile Include="..\source\RauschProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\RauschProcessor.cpp">
+    <ClCompile Include="..\source\Rauschen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -189,10 +189,10 @@
     <ClInclude Include="..\source\pluginadapter.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\Ringbuffer.h">
+    <ClInclude Include="..\source\RauschProcessor.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\RauschProcessor.h">
+    <ClInclude Include="..\source\Rauschen.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,8 +1,7 @@
 #ifndef RAUSCH_PROCESSOR_H
 #define RAUSCH_PROCESSOR_H
 
-#include "Lfo.h"
-#include "Ringbuffer.h"
+#include "Rauschen.h"
 
 const float FREQUENCY_DEFAULT_HZ = 0.01;
 const float FREQUENCY_MAX_HZ = 0.1;
@@ -18,8 +17,7 @@ public:
         void setDepth(float depth);
 private:
         float sampleRate;
-        Ringbuffer buffer;
         float depth;
-		float sweep;
+		Rauschen rauschen;
 };
 #endif
