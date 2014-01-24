@@ -10,12 +10,13 @@ Lfo::Lfo(void)
 
 Lfo::~Lfo(void) {}
 
-void Lfo::initialize(float sampleRate) {
+void Lfo::initialize(float sampleRate, float freq) {
 	this->sampleRate = sampleRate;
+	this->frequency = freq;
 }
 
-void Lfo::setFrequency(float frequency) {
-	this->frequency = frequency;
+void Lfo::setFrequency(float freq) {
+	this->frequency = freq;
 }
 
 float Lfo::getValue() {

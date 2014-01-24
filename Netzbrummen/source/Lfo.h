@@ -5,8 +5,8 @@ class Lfo {
 public:
 	Lfo(void);
 	~Lfo(void);
-	void initialize(float sampleRate);
-	void setFrequency(float frequency);
+	void initialize(float sampleRate, float freq);
+	void setFrequency(float freq);
 	float getValue();
 private:
 	float sampleRate;

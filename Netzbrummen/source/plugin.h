@@ -1,7 +1,7 @@
 #ifndef __plugin__
 #define __plugin__
 #include "pluginadapter.h"
-#include "GainProcessor.h"
+#include "HumProcessor.h"
 
 namespace Steinberg {
 namespace Vst {
@@ -15,9 +15,11 @@ static const FUID PluginControllerUID (0xD39D5B65, 0xE8AF42FA, 0x143F4AC8, 0x41E
 enum
 {
 	/** parameter ID */
-	kFreqId = 0,
-	kDepthId = 0,
-	kOffsetId = 0
+	kVolumeId = 0,
+	kMidFreqId = 1,
+	kHighFreqId = 2,
+	kMidDepthId = 3,
+	kHighDepthId = 4
 };
 
 
@@ -33,8 +35,8 @@ private:
 	int numChannels;
 	SampleRate sampleRate;
 private:
-	GainProcessor leftProcessor;
-	GainProcessor rightProcessor;
+	HumProcessor leftProcessor;
+	HumProcessor rightProcessor;
 };
 
 
