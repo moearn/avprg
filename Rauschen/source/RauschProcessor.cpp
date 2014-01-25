@@ -19,7 +19,7 @@ void RauschProcessor::setDepth(float depth){
 
 float RauschProcessor::processOneSample(float input){
 		float output = rauschen.generateOutput();
-		return input + (output * depth);
+		return input + (output* depth* 0.1);
 }
 void RauschProcessor::process(float* input, float*output, int numberOfSamples){
         for(int i = 0; i < numberOfSamples; i++){

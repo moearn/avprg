@@ -1,9 +1,22 @@
-﻿Der Buildvorgang wurde am 24.01.2014 17:50:21 gestartet.
+﻿Der Buildvorgang wurde am 24.01.2014 20:48:14 gestartet.
      1>Projekt "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Rauschen\win\plugin_vst2_vc10.vcxproj" auf Knoten "3", build Ziel(e).
      1>InitializeBuildStatus:
-         Aktualisieren des Timestamps von "Win32\Debug\Rauschen.unsuccessfulbuild".
+         "Win32\Debug\Rauschen.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
        ClCompile:
-         Alle Ausgaben sind aktuell.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../../.. /I../../../../../vstgui4 /ZI /nologo /W3 /WX- /Od /Oy- /D WINDOWS=1 /D DEVELOPMENT=1 /D _CRT_SECURE_NO_DEPRECATE=1 /D VSTGUI_LIVE_EDITING=1 /D "PLUGINNAME=\"Rauschen\"" /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc100.pdb" /FR"Win32\Debug\\" /Gd /TP /analyze- /errorReport:prompt ..\source\Rauschen.cpp
+         Rauschen.cpp
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(16): warning C4305: '=': Verkürzung von 'double' in 'float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(17): warning C4305: '=': Verkürzung von 'double' in 'float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(18): warning C4305: '=': Verkürzung von 'double' in 'float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(19): warning C4305: '=': Verkürzung von 'double' in 'float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(20): warning C4305: '=': Verkürzung von 'double' in 'float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(23): warning C4305: '=': Verkürzung von 'double' in 'float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(24): warning C4305: '=': Verkürzung von 'double' in 'float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(25): warning C4305: '=': Verkürzung von 'double' in 'float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(26): warning C4305: '=': Verkürzung von 'double' in 'float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(27): warning C4305: '=': Verkürzung von 'double' in 'float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(34): warning C4244: '=': Konvertierung von 'double' in 'float', möglicher Datenverlust
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\rauschen\source\rauschen.cpp(38): warning C4305: '*=': Verkürzung von 'double' in 'float'
          Alle Ausgaben sind aktuell.
        ResourceCompile:
          Alle Ausgaben sind aktuell.
@@ -43,4 +56,4 @@
 
 Das Erstellen war erfolgreich.
 
-Verstrichene Zeit 00:00:03.85
+Verstrichene Zeit 00:00:03.06
