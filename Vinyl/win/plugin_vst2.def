@@ -1,5 +1,0 @@
-EXPORTS
-	GetPluginFactory
-	VSTPluginMain
-	main=VSTPluginMain
-	
