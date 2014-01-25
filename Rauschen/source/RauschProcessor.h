@@ -3,7 +3,7 @@
 
 #include "Rauschen.h"
 
-const float HISS_DEPTH_DEFAULT_PERCENT = 50;
+const float HISS_DEPTH_DEFAULT_PERCENT = 0;
 
 
 class RauschProcessor{

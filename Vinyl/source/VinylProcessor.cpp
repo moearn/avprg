@@ -1,7 +1,7 @@
 #include "VinylProcessor.h"
 
 VinylProcessor::VinylProcessor()
-: gain(1), wearAmount(0.5)
+: gain(1), wearAmount(0)
 {}
 
 void VinylProcessor::initialize(float sampleRate){
@@ -55,14 +55,17 @@ void VinylProcessor::setHumVolume(float vol) {
 float VinylProcessor::processOneSample(float input){
 	float currentSample = input;
 	
-	// chaining the signal -- (1. Crackle, 2. Vibrato, 3. Hiss, 4. LowPass-Filter, 5. Mainshum)
-	currentSample = crackle.processOneSample(currentSample);
-	currentSample = vibrato.processOneSample(currentSample);
-	currentSample = hiss.processOneSample(currentSample);
-	currentSample = wearAmount * previousSample + (1-wearAmount) * currentSample;
-	currentSample = hum.processOneSample(currentSample);
+	// chaining the signal -- (1. Crackle, 2. Vibrato, 3. Gain, 4. Hiss, 5. LowPass-Filter, 6. Mainshum)
+	currentSample  = crackle.processOneSample(currentSample);
+	currentSample  = vibrato.processOneSample(currentSample);
+	currentSample *= gain;
+	currentSample  = hiss.processOneSample(currentSample);
 
+	currentSample  = wearAmount * previousSample + (1-wearAmount) * currentSample;
+	//currentSample  = -wearAmount * previousSample + (wearAmount-1) * currentSample;
 	this->previousSample = currentSample;
+
+	currentSample  = hum.processOneSample(currentSample);
 
 	return currentSample;
 }

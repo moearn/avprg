@@ -1,6 +1,6 @@
 #include "HumGenerator.h"
 
-HumGenerator::HumGenerator() : baseAmount(0.50), midAmount(0.20), highAmount(0.10)
+HumGenerator::HumGenerator() : baseAmount(0.50), midAmount(0.10), highAmount(0.10)
 {}
 
 void HumGenerator::initialize(float sampleRate) {

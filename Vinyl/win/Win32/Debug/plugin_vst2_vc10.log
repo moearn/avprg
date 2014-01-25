@@ -1,4 +1,4 @@
-﻿Der Buildvorgang wurde am 25.01.2014 17:53:56 gestartet.
+﻿Der Buildvorgang wurde am 25.01.2014 18:49:57 gestartet.
      1>Projekt "C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Vinyl\win\plugin_vst2_vc10.vcxproj" auf Knoten "2", Build Ziel(e).
      1>ClCompile:
          G:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../../../../.. /I../../../../../vstgui4 /ZI /nologo /W3 /WX- /Od /Oy- /D WINDOWS=1 /D DEVELOPMENT=1 /D _CRT_SECURE_NO_DEPRECATE=1 /D VSTGUI_LIVE_EDITING=1 /D "PLUGINNAME=\"Vinyl_Plugin\"" /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /FR"Win32\Debug\\" /Gd /TP /analyze- /errorReport:prompt ..\source\VinylProcessor.cpp
@@ -38,10 +38,8 @@
          "C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\base\win\Win32\Debug.base_vc10\base_vc10.lib"
          "C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\source\vst\vst2wrapper\win\Win32\Debug\vst2wrapper.lib"
          plugin_vst2_vc10.vcxproj -> C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Vinyl\win\Win32\Debug\Vinyl_Plugin.dll
-       BscMake:
-         G:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\bscmake.exe /nologo /o"Win32\Debug\Vinyl_Plugin.bsc" Win32\Debug\vst3editor.sbr Win32\Debug\vstgui_uidescription_win32.sbr Win32\Debug\vstgui_win32.sbr Win32\Debug\Lfo.sbr Win32\Debug\CrackleGenerator.sbr Win32\Debug\CrackleProcessor.sbr Win32\Debug\HumGenerator.sbr Win32\Debug\HumProcessor.sbr Win32\Debug\Rauschen.sbr Win32\Debug\RauschProcessor.sbr Win32\Debug\Ringbuffer.sbr Win32\Debug\VibratoProcessor.sbr Win32\Debug\VinylProcessor.sbr Win32\Debug\plugin.sbr Win32\Debug\pluginadapter.sbr Win32\Debug\pluginview.sbr Win32\Debug\vstaudioeffect.sbr Win32\Debug\vstbus.sbr Win32\Debug\vstcomponent.sbr Win32\Debug\vstcomponentbase.sbr Win32\Debug\vsteditcontroller.sbr Win32\Debug\vstguieditor.sbr Win32\Debug\vstinitiids.sbr Win32\Debug\vstparameters.sbr Win32\Debug\dllmain.sbr Win32\Debug\pluginfactoryvst3.sbr Win32\Debug\ustring.sbr
      1>Die Erstellung des Projekts "C:\Users\Eric\SkyDrive\Programmierung\VST3 SDK_WS1314\public.sdk\avprg\avprg_git\Vinyl\win\plugin_vst2_vc10.vcxproj" ist abgeschlossen, Build Ziel(e).
 
 Build erfolgreich.
 
-Verstrichene Zeit 00:00:02.16
+Verstrichene Zeit 00:00:01.21

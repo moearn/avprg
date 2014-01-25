@@ -1,7 +1,7 @@
 #include "CrackleProcessor.h"
 
 CrackleProcessor::CrackleProcessor()
-	: sampleRate(0), crackleDepth(0.1f)
+	: sampleRate(0), crackleDepth(0)
 {
 }
 
@@ -33,7 +33,7 @@ void CrackleProcessor::initialize(float sampleRate) {
 	popSamples[9] = 0.0;
 
 	crackle.initialize(crackleSamples, 10, 140); // Knistern
-	pop.initialize(popSamples, 10, 1000);		// Knacken
+	pop.initialize(popSamples, 10, 1000);		 // Knacken
 }
 
 void CrackleProcessor::setCrackleAmount(float amount) {

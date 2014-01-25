@@ -10,6 +10,7 @@ namespace Vst {
 // define parameter definitions here...
 void PluginController::setupParameters(){
 
+	parameters.addParameter(new RangeParameter(STR16("Gain"), kGainId, STR16("%"), 0, 100));
 	parameters.addParameter(new RangeParameter(STR16("Staub"), kCrackleDepthId, STR16("%"), 0, 100));
 	parameters.addParameter(new RangeParameter(STR16("Staub: Menge"), kCrackleAmountId, STR16("%"), 0, 100));
 	parameters.addParameter(new RangeParameter(STR16("Leiern"), kVibratoDepthId, STR16("%"), 0, 100));
@@ -20,8 +21,7 @@ void PluginController::setupParameters(){
 	parameters.addParameter(new RangeParameter(STR16("Netzbrummen: Mid Frequency"), kHumMidFreqId, STR16("Hz"), 1500, 2900));
 	parameters.addParameter(new RangeParameter(STR16("Netzbrummen: Mid Depth"), kHumMidDepthId, STR16("%"), 0, 100));
 	parameters.addParameter(new RangeParameter(STR16("Netzbrummen: High Frequency"), kHumHighFreqId, STR16("Hz"), 3000, 8000));
-	parameters.addParameter(new RangeParameter(STR16("Netzrbummen: High Depth"), kHumHighDepthId, STR16("%"), 0, 100));
-	parameters.addParameter(new RangeParameter(STR16("Gain"), kGainId, STR16("%"), 0, 100));
+	parameters.addParameter(new RangeParameter(STR16("Netzbrummen: High Depth"), kHumHighDepthId, STR16("%"), 0, 100));
 
 }
 
@@ -108,6 +108,13 @@ tresult PLUGIN_API Plugin::process (ProcessData& data)
         float wear = getInputParameterChange(data, kWearId);
 		leftProcessor.setWear(wear);
 		rightProcessor.setWear(wear);
+    }
+
+	//Gain
+	if (hasInputParameterChanged(data, kGainId)){
+        float gain = getInputParameterChange(data, kGainId);
+		leftProcessor.setGain(gain);
+		rightProcessor.setGain(gain);
     }
 
  	if (numChannels > 0){

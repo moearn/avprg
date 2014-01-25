@@ -1,21 +1,11 @@
 #include "HumProcessor.h"
 
 HumProcessor::HumProcessor()
-: volume(0.1)
+: volume(0)
 {}
 
 void HumProcessor::initialize(float sampleRate){
 	this->sampleRate = sampleRate;
-	//lfo45Hz.initialize(sampleRate, 45);
-	//lfo50Hz.initialize(sampleRate, 50);
-	//lfo55Hz.initialize(sampleRate, 55);
-	//lfo100Hz.initialize(sampleRate, 100);
-	//lfo150Hz.initialize(sampleRate, 150);
-	//lfo5000Hz.initialize(sampleRate, 5000);
-	//lfo5050Hz.initialize(sampleRate, 5050);
-	//lfo7050Hz.initialize(sampleRate, 7050);
-	//lfo7100Hz.initialize(sampleRate, 7100);
-	//lfo7150Hz.initialize(sampleRate, 7150);
 	mainsHum.initialize(sampleRate);
 }
 void HumProcessor::setVolume(float vol){
