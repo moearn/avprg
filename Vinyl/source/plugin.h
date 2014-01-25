@@ -1,7 +1,7 @@
 #ifndef __plugin__
 #define __plugin__
 #include "pluginadapter.h"
-#include "VinylProcessor.h"
+#include "VibratoProcessor.h"
 
 namespace Steinberg {
 namespace Vst {
@@ -15,18 +15,8 @@ static const FUID PluginControllerUID (0xD39D5B65, 0xD8AF42FA, 0x143F4AC8, 0x41E
 enum
 {
 	/** parameter ID */
-	kVibratoFrequencyId = 0,
-	kVibratoDepthId = 1,
-	kHissDepthId = 2,
-	kCrackleDepthId = 3,
-	kCrackleAmountId = 4,
-	kWearId = 5,
-	kHumVolumeId = 6,
-	kHumMidFreqId = 7,
-	kHumHighFreqId = 8,
-	kHumMidDepthId = 9,
-	kHumHighDepthId = 10,
-	kGainId = 11
+	kFrequencyId = 0,
+	kDepthId = 1
 };
 
 
@@ -42,8 +32,8 @@ private:
 	int numChannels;
 	SampleRate sampleRate;
 private:
-	VinylProcessor leftProcessor;
-	VinylProcessor rightProcessor;
+	VibratoProcessor leftProcessor;
+	VibratoProcessor rightProcessor;
 };
 
 
