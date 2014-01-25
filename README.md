@@ -2,9 +2,9 @@ VINYL EFFEKT
 ============
 
 Parameter
-Gain - Simuliert die Lautst�rke der Plattenspieler-Lautsprecher
-Staub - Anteil des Staubs am Signal (Lautst�rke)
-Staub: Menge - Anzahl der Staubk�rner/Dichte des Knisterns
+Gain -    Simuliert die Lautstärke der Plattenspieler-Lautsprecher
+Staub -   Anteil des Staubs am Signal (Lautst�rke)
+Staub:    Menge - Anzahl der Staubkärner/Dichte des Knisterns
 Leiern - Anteil des Leierns am Signal (Lautst�rke)
 Leiern: Frequenz - Die Frequenz des Leierns
 Rauschen - St�rke des Rauschens
