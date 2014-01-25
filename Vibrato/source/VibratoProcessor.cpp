@@ -5,13 +5,13 @@ VibratoProcessor::VibratoProcessor()
 : depth(0)
 , sampleRate(0)
 {
-	setFrequency(FREQUENCY_DEFAULT_HZ);
-	setDepth(DEPTH_DEFAULT_PERCENT / 100);
+	setFrequency(VIBRATO_FREQUENCY_DEFAULT_HZ);
+	setDepth(VIBRATO_DEPTH_DEFAULT_PERCENT / 100);
 }
 
 void VibratoProcessor::initialize(float sampleRate){
 	this->sampleRate = sampleRate;
-	lfo.initialize(sampleRate);
+	lfo.initialize(sampleRate, VIBRATO_FREQUENCY_DEFAULT_HZ);
 	buffer.resize(DELAY_MAX_SEC * sampleRate);
 }
 void VibratoProcessor::setFrequency(float frequency){

@@ -5,7 +5,7 @@ RauschProcessor::RauschProcessor()
 , sampleRate(0)
 , rauschen()
 {
-        setDepth(DEPTH_DEFAULT_PERCENT / 100);
+        setDepth(HISS_DEPTH_DEFAULT_PERCENT / 100);
 }
 
 void RauschProcessor::initialize(float sampleRate){

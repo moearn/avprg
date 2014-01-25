@@ -6,6 +6,10 @@ VinylProcessor::VinylProcessor()
 
 void VinylProcessor::initialize(float sampleRate){
 	this->sampleRate = sampleRate;
+	vibrato.initialize(sampleRate);
+	crackle.initialize(sampleRate);
+	hiss.initialize(sampleRate);
+	hum.initialize(sampleRate);
 }
 void VinylProcessor::setGain(float gain){
 	this->gain = gain;
@@ -24,7 +28,7 @@ void VinylProcessor::setCrackleDepth(float depth) {
 void VinylProcessor::setVibratoFrequency(float freq) {
 	vibrato.setFrequency(freq);
 }
-void VinylProcessor::setCrackleDepth(float depth) {
+void VinylProcessor::setVibratoDepth(float depth) {
 	vibrato.setDepth(depth);
 }
 

@@ -7,10 +7,12 @@ public:
 	~Lfo(void);
 	void initialize(float sampleRate, float freq);
 	void setFrequency(float freq);
+	void setPhase(float phase);
 	float getValue();
 private:
 	float sampleRate;
 	float frequency;
+	float phase;
 	float index;
 };
 

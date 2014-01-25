@@ -32,6 +32,18 @@
     <Filter Include="Source Files\vstgui4">
       <UniqueIdentifier>{eb232f92-e15d-4525-a84a-49f55ede02d0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\rauschen">
+      <UniqueIdentifier>{22ccf9d9-70d8-4e13-9dc8-e536b9df9809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vibrato">
+      <UniqueIdentifier>{0f45481b-923b-4676-a023-48e2c0532146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hum">
+      <UniqueIdentifier>{400c3e57-4eb5-4c67-957c-3d18f68e97c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\crackle">
+      <UniqueIdentifier>{18e79bdf-6d8f-4802-84a0-e893b47a7373}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\plugin.cpp">
@@ -85,32 +97,35 @@
     <ClCompile Include="..\source\pluginadapter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\VibratoProcessor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\source\VinylProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Knistern\source\CrackleGenerator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Knistern\source\CrackleProcessor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Netzbrummen\source\HumGenerator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Netzbrummen\source\HumProcessor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Rauschen\source\Rauschen.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\rauschen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Rauschen\source\RauschProcessor.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\rauschen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Vibrato\source\VibratoProcessor.cpp">
+      <Filter>Source Files\vibrato</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Netzbrummen\source\HumGenerator.cpp">
+      <Filter>Source Files\hum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Netzbrummen\source\HumProcessor.cpp">
+      <Filter>Source Files\hum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Knistern\source\CrackleGenerator.cpp">
+      <Filter>Source Files\crackle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Knistern\source\CrackleProcessor.cpp">
+      <Filter>Source Files\crackle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Lfo.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Vibrato\source\Ringbuffer.cpp">
+      <Filter>Source Files\vibrato</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -210,28 +225,35 @@
     <ClInclude Include="..\source\pluginadapter.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\VibratoProcessor.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\source\VinylProcessor.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Knistern\source\CrackleGenerator.h" />
-    <ClInclude Include="..\..\Knistern\source\CrackleProcessor.h" />
-    <ClInclude Include="..\..\Netzbrummen\source\HumGenerator.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Netzbrummen\source\HumProcessor.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Rauschen\source\Rauschen.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\rauschen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Rauschen\source\RauschProcessor.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\rauschen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Vibrato\source\VibratoProcessor.h">
+      <Filter>Source Files\vibrato</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Netzbrummen\source\HumGenerator.h">
+      <Filter>Source Files\hum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Netzbrummen\source\HumProcessor.h">
+      <Filter>Source Files\hum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Knistern\source\CrackleGenerator.h">
+      <Filter>Source Files\crackle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Knistern\source\CrackleProcessor.h">
+      <Filter>Source Files\crackle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Lfo.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Vibrato\source\Ringbuffer.h">
+      <Filter>Source Files\vibrato</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

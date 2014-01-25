@@ -215,12 +215,14 @@
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\plugin-bindings\vst3editor.cpp" />
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\vstgui_uidescription_win32.cpp" />
     <ClCompile Include="..\..\..\..\..\vstgui4\vstgui\vstgui_win32.cpp" />
+    <ClCompile Include="..\..\common\Lfo.cpp" />
     <ClCompile Include="..\..\Knistern\source\CrackleGenerator.cpp" />
     <ClCompile Include="..\..\Knistern\source\CrackleProcessor.cpp" />
     <ClCompile Include="..\..\Netzbrummen\source\HumGenerator.cpp" />
     <ClCompile Include="..\..\Netzbrummen\source\HumProcessor.cpp" />
     <ClCompile Include="..\..\Rauschen\source\Rauschen.cpp" />
     <ClCompile Include="..\..\Rauschen\source\RauschProcessor.cpp" />
+    <ClCompile Include="..\..\Vibrato\source\Ringbuffer.cpp" />
     <ClCompile Include="..\..\Vibrato\source\VibratoProcessor.cpp" />
     <ClCompile Include="..\source\VinylProcessor.cpp" />
     <ClCompile Include="..\source\plugin.cpp">
@@ -242,15 +244,16 @@
     <ClCompile Include="..\..\..\..\source\main\dllmain.cpp" />
     <ClCompile Include="..\..\..\..\source\main\pluginfactoryvst3.cpp" />
     <ClCompile Include="..\..\..\..\..\pluginterfaces\base\ustring.cpp" />
-    <ClCompile Include="..\source\VibratoProcessor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\common\Lfo.h" />
     <ClInclude Include="..\..\Knistern\source\CrackleGenerator.h" />
     <ClInclude Include="..\..\Knistern\source\CrackleProcessor.h" />
     <ClInclude Include="..\..\Netzbrummen\source\HumGenerator.h" />
     <ClInclude Include="..\..\Netzbrummen\source\HumProcessor.h" />
     <ClInclude Include="..\..\Rauschen\source\Rauschen.h" />
     <ClInclude Include="..\..\Rauschen\source\RauschProcessor.h" />
+    <ClInclude Include="..\..\Vibrato\source\Ringbuffer.h" />
     <ClInclude Include="..\..\Vibrato\source\VibratoProcessor.h" />
     <ClInclude Include="..\source\VinylProcessor.h" />
     <ClInclude Include="..\source\plugin.h" />
@@ -285,7 +288,6 @@
     <ClInclude Include="..\..\..\..\..\pluginterfaces\vst\ivstunits.h" />
     <ClInclude Include="..\..\..\..\..\pluginterfaces\vst\vstpresetkeys.h" />
     <ClInclude Include="..\..\..\..\..\pluginterfaces\vst\vsttypes.h" />
-    <ClInclude Include="..\source\VibratoProcessor.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\resource\plugin.rc" />
