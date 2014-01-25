@@ -1,5 +1,8 @@
 # VINYL EFFECT PLUGIN
 
+Ein VST Plugin für Windows / A VST Plugin for Windows
+
+Path: *Vinyl/win/Vinyl_Plugin.dll*
 
 ### Parameter
 
