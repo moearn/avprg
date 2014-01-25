@@ -1,0 +1,103 @@
+﻿Der Buildvorgang wurde am 18.01.2014 18:33:27 gestartet.
+     1>Projekt "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Vibrato\win\plugin_vst2_vc10.vcxproj" auf Knoten "3", build Ziel(e).
+     1>InitializeBuildStatus:
+         "Win32\Debug\Vibrato.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../../.. /I../../../../../vstgui4 /ZI /nologo /W3 /WX- /Od /Oy- /D WINDOWS=1 /D DEVELOPMENT=1 /D _CRT_SECURE_NO_DEPRECATE=1 /D VSTGUI_LIVE_EDITING=1 /D "PLUGINNAME=\"Vibrato\"" /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc100.pdb" /FR"Win32\Debug\\" /Gd /TP /analyze- /errorReport:prompt "..\..\..\..\..\vstgui4\vstgui\plugin-bindings\vst3editor.cpp" ..\..\..\..\..\vstgui4\vstgui\vstgui_uidescription_win32.cpp ..\..\..\..\..\vstgui4\vstgui\vstgui_win32.cpp ..\source\GainProcessor.cpp ..\source\Lfo.cpp ..\source\pluginadapter.cpp ..\..\..\..\source\common\pluginview.cpp ..\..\..\..\source\vst\vstaudioeffect.cpp ..\..\..\..\source\vst\vstbus.cpp ..\..\..\..\source\vst\vstcomponent.cpp ..\..\..\..\source\vst\vstcomponentbase.cpp ..\..\..\..\source\vst\vsteditcontroller.cpp ..\..\..\..\source\vst\vstguieditor.cpp ..\..\..\..\source\vst\vstinitiids.cpp ..\..\..\..\source\vst\vstparameters.cpp ..\..\..\..\source\main\dllmain.cpp ..\..\..\..\source\main\pluginfactoryvst3.cpp ..\..\..\..\..\pluginterfaces\base\ustring.cpp ..\source\Ringbuffer.cpp ..\source\VibratoProcessor.cpp
+         VibratoProcessor.cpp
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\vibrato\source\vibratoprocessor.h(8): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\vibrato\source\vibratoprocessor.cpp(15): warning C4244: 'Argument': Konvertierung von 'const float' in 'int', möglicher Datenverlust
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\vibrato\source\vibratoprocessor.cpp(28): warning C4244: 'Initialisierung': Konvertierung von 'const float' in 'int', möglicher Datenverlust
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\vibrato\source\vibratoprocessor.cpp(31): warning C4244: 'Argument': Konvertierung von 'float' in 'int', möglicher Datenverlust
+         Ringbuffer.cpp
+         ustring.cpp
+         pluginfactoryvst3.cpp
+         dllmain.cpp
+         vstparameters.cpp
+         vstinitiids.cpp
+         vstguieditor.cpp
+         vsteditcontroller.cpp
+         vstcomponentbase.cpp
+         vstcomponent.cpp
+         vstbus.cpp
+         vstaudioeffect.cpp
+         pluginview.cpp
+         pluginadapter.cpp
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\vibrato\source\vibratoprocessor.h(8): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+         Lfo.cpp
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\vibrato\source\lfo.cpp(24): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'float', möglicher Datenverlust
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\vibrato\source\lfo.cpp(26): warning C4244: 'return': Konvertierung von 'double' in 'float', möglicher Datenverlust
+         GainProcessor.cpp
+         vstgui_win32.cpp
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(144): warning C4005: 'INT8_MIN': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(72): Siehe vorherige Definition von 'INT8_MIN'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(146): warning C4005: 'INT16_MIN': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(73): Siehe vorherige Definition von 'INT16_MIN'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(148): warning C4005: 'INT32_MIN': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(74): Siehe vorherige Definition von 'INT32_MIN'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(152): warning C4005: 'INT64_MIN': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(149): Siehe vorherige Definition von 'INT64_MIN'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(167): warning C4005: 'INT8_MAX': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(76): Siehe vorherige Definition von 'INT8_MAX'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(168): warning C4005: 'UINT8_MAX': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(79): Siehe vorherige Definition von 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(171): warning C4005: 'INT16_MAX': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(77): Siehe vorherige Definition von 'INT16_MAX'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(173): warning C4005: 'UINT16_MAX': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(80): Siehe vorherige Definition von 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(176): warning C4005: 'INT32_MAX': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(78): Siehe vorherige Definition von 'INT32_MAX'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(178): warning C4005: 'UINT32_MAX': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(81): Siehe vorherige Definition von 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(184): warning C4005: 'INT64_MAX': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(150): Siehe vorherige Definition von 'INT64_MAX'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\intsafe.h(189): warning C4005: 'UINT64_MAX': Makro-Neudefinition
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdint.h(151): Siehe vorherige Definition von 'UINT64_MAX'
+         vstgui_uidescription_win32.cpp
+         vst3editor.cpp
+         Code wird generiert...
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../../.. /I../../../../../vstgui4 /ZI /nologo /W3 /WX- /Od /Oy- /D WINDOWS=1 /D DEVELOPMENT=1 /D _CRT_SECURE_NO_DEPRECATE=1 /D VSTGUI_LIVE_EDITING=1 /D "PLUGINNAME=\"Vibrato\"" /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\plugin1.obj" /Fd"Win32\Debug\vc100.pdb" /FR"Win32\Debug\\" /Gd /TP /analyze- /errorReport:prompt ..\source\plugin.cpp
+         plugin.cpp
+     1>c:\users\maren\desktop\vst3 sdk_ws1314_2\vst3 sdk_ws1314\public.sdk\avprg\vst\vibrato\source\vibratoprocessor.h(8): warning C4305: 'Initialisierung': Verkürzung von 'double' in 'const float'
+       ResourceCompile:
+         Alle Ausgaben sind aktuell.
+         Alle Ausgaben sind aktuell.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Vibrato\win\Win32\Debug\Vibrato.dll) entspricht nicht dem OutputFile-Eigenschaftswert (C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Vibrato\win\Vibrato.dll) von Linker. Das Projekt wird daher möglicherweise nicht ordnungsgemäß erstellt. Damit dieses Problem behoben werden kann, müssen die Eigenschaftswerte für $(OutDir), $(TargetName) und $(TargetExt) dem in %(Link.OutputFile) angegebenen Wert entsprechen.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Vibrato.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"plugin_vst2.def" /MANIFEST:NO /DEBUG /PDB:"Win32\Debug\plugin.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Win32\Debug\Vibrato.lib" /MACHINE:X86 /DLL Win32\Debug\plugin.res
+         Win32\Debug\uidesc.res
+         Win32\Debug\vst3editor.obj
+         Win32\Debug\vstgui_uidescription_win32.obj
+         Win32\Debug\vstgui_win32.obj
+         Win32\Debug\GainProcessor.obj
+         Win32\Debug\Lfo.obj
+         Win32\Debug\pluginadapter.obj
+         Win32\Debug\pluginview.obj
+         Win32\Debug\vstaudioeffect.obj
+         Win32\Debug\vstbus.obj
+         Win32\Debug\vstcomponent.obj
+         Win32\Debug\vstcomponentbase.obj
+         Win32\Debug\vsteditcontroller.obj
+         Win32\Debug\vstguieditor.obj
+         Win32\Debug\vstinitiids.obj
+         Win32\Debug\vstparameters.obj
+         Win32\Debug\dllmain.obj
+         Win32\Debug\pluginfactoryvst3.obj
+         Win32\Debug\ustring.obj
+         Win32\Debug\Ringbuffer.obj
+         Win32\Debug\VibratoProcessor.obj
+         Win32\Debug\plugin1.obj
+         "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\base\win\Win32\Debug.base_vc10\base_vc10.lib"
+         "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\source\vst\vst2wrapper\win\Win32\Debug\vst2wrapper.lib"
+            Bibliothek "Win32\Debug\Vibrato.lib" und Objekt "Win32\Debug\Vibrato.exp" werden erstellt.
+         plugin_vst2_vc10.vcxproj -> C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Vibrato\win\Win32\Debug\Vibrato.dll
+       BscMake:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"Win32\Debug\Vibrato.bsc" Win32\Debug\vst3editor.sbr Win32\Debug\vstgui_uidescription_win32.sbr Win32\Debug\vstgui_win32.sbr Win32\Debug\GainProcessor.sbr Win32\Debug\Lfo.sbr Win32\Debug\plugin.sbr Win32\Debug\pluginadapter.sbr Win32\Debug\pluginview.sbr Win32\Debug\vstaudioeffect.sbr Win32\Debug\vstbus.sbr Win32\Debug\vstcomponent.sbr Win32\Debug\vstcomponentbase.sbr Win32\Debug\vsteditcontroller.sbr Win32\Debug\vstguieditor.sbr Win32\Debug\vstinitiids.sbr Win32\Debug\vstparameters.sbr Win32\Debug\dllmain.sbr Win32\Debug\pluginfactoryvst3.sbr Win32\Debug\ustring.sbr Win32\Debug\Ringbuffer.sbr Win32\Debug\VibratoProcessor.sbr
+       FinalizeBuildStatus:
+         Die Datei "Win32\Debug\Vibrato.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Win32\Debug\Vibrato.lastbuildstate".
+     1>Die Erstellung des Projekts "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Vibrato\win\plugin_vst2_vc10.vcxproj" ist abgeschlossen, build Ziel(e).
+
+Das Erstellen war erfolgreich.
+
+Verstrichene Zeit 00:01:21.30
