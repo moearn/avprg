@@ -3,9 +3,7 @@
 
 #include "Rauschen.h"
 
-const float FREQUENCY_DEFAULT_HZ = 0.01;
-const float FREQUENCY_MAX_HZ = 0.1;
-const float DEPTH_DEFAULT_PERCENT = 50;
+const float HISS_DEPTH_DEFAULT_PERCENT = 0;
 
 
 class RauschProcessor{

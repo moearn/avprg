@@ -3,6 +3,8 @@
 #include <time.h>
 using namespace std;
 
+const int CRACKLE_MIN_GAP_LENGTH = 100; // samples
+
 CrackleGenerator::CrackleGenerator() 
 	: amount(0), index(0) {}
 
@@ -10,7 +12,7 @@ void CrackleGenerator::initialize(float* samples, int length, int gapLength){
 	this->crackleSamples = samples;
 	this->crackleLength = length;
 	this->crackleVolume = 1; // internal volume for ONE crack, not overall depth!!!
-	this->gapLength = 100 + crackleLength;
+	this->gapLength = CRACKLE_MIN_GAP_LENGTH + crackleLength;
 	srand (time(NULL));
 }
 

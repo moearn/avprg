@@ -1,7 +1,7 @@
 #ifndef HUM_GENERATOR_H_
 #define HUM_GENERATOR_H_
 
-#include "Lfo.h"
+#include "..\..\common\Lfo.h"
 
 class HumGenerator {
 public:
