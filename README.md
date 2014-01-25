@@ -2,7 +2,13 @@
 
 Ein VST Plugin für Windows / A VST Plugin for Windows
 
-Path: *Vinyl/win/Vinyl_Plugin.dll*
+#### Pfad/Path: *Vinyl/win/Vinyl_Plugin.dll*
+
+**Standalone versions**:  
+Vibrato: *Vibrato/win/Vibrato.dll*  
+Crackle: *Knistern/win/Knistern.dll*  
+Hiss: *Rauschen/win/Rauschen.dll*  
+Mainshum: *Netzbrummen/win/Netzbrummen.dll*
 
 ### Parameter
 
