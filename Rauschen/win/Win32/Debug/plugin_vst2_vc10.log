@@ -1,4 +1,4 @@
-﻿Der Buildvorgang wurde am 24.01.2014 20:48:14 gestartet.
+﻿Der Buildvorgang wurde am 26.01.2014 15:24:38 gestartet.
      1>Projekt "C:\Users\Maren\Desktop\VST3 SDK_WS1314_2\VST3 SDK_WS1314\public.sdk\avprg\vst\Rauschen\win\plugin_vst2_vc10.vcxproj" auf Knoten "3", build Ziel(e).
      1>InitializeBuildStatus:
          "Win32\Debug\Rauschen.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
@@ -56,4 +56,4 @@
 
 Das Erstellen war erfolgreich.
 
-Verstrichene Zeit 00:00:03.06
+Verstrichene Zeit 00:00:15.77

@@ -37,5 +37,8 @@ float Rauschen::generateOutput(){
 
 		output *= 0.06;
 		
+		delete[] arrayA;
+		delete[] arraySum;
+
 		return output;
 }
