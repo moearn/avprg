@@ -58,8 +58,8 @@ float VinylProcessor::processOneSample(float input){
 	// chaining the signal -- (1. Crackle, 2. Vibrato, 3. Gain, 4. Hiss, 5. LowPass-Filter, 6. Mainshum)
 	currentSample  = crackle.processOneSample(currentSample);
 	currentSample  = vibrato.processOneSample(currentSample);
-	currentSample *= gain;
 	currentSample  = hiss.processOneSample(currentSample);
+	currentSample *= gain;
 
 	currentSample  = wearAmount * previousSample + (1-wearAmount) * currentSample;
 	//currentSample  = -wearAmount * previousSample + (wearAmount-1) * currentSample;

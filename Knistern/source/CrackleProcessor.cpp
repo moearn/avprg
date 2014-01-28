@@ -8,7 +8,7 @@ CrackleProcessor::CrackleProcessor()
 void CrackleProcessor::initialize(float sampleRate) {
 	this->sampleRate = sampleRate;
 
-	float* crackleSamples = new float[8];
+	float* crackleSamples = new float[10];
 	crackleSamples[0] = 0.0;
 	crackleSamples[1] = 0.1;
 	crackleSamples[2] = 0.2;
@@ -20,7 +20,7 @@ void CrackleProcessor::initialize(float sampleRate) {
 	crackleSamples[8] = -0.1;
 	crackleSamples[9] = 0.0;
 
-	float* popSamples = new float[3];
+	float* popSamples = new float[10];
 	popSamples[0] = 0.1;
 	popSamples[1] = 0.2;
 	popSamples[2] = 0.3;
@@ -33,7 +33,7 @@ void CrackleProcessor::initialize(float sampleRate) {
 	popSamples[9] = 0.0;
 
 	crackle.initialize(crackleSamples, 10, 140); // Knistern
-	pop.initialize(popSamples, 10, 1000);		 // Knacken
+	pop.initialize(popSamples, 10, 1000);        // Knacken
 }
 
 void CrackleProcessor::setCrackleAmount(float amount) {
